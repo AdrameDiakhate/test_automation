@@ -1,0 +1,26 @@
+Feature: Twetter un texte
+Scenario: Tweet réussie
+Given: Je lance l'application Tweetter
+When: Je clique sur l'icône en forme de plume
+And: Je saisis <my_tweet> dans le champ de texte
+And: Je clique sur le bouton Tweeter
+Then: On m'affiche <message>
+
+Exemple:
+
+my_tweet                           message
+Hello world                        Your tweet has been sent
+Hey there!                         Your tweet has been sent
+
+Scenario: Tweet échoué texte long
+Given: Je lance l'application Tweetter
+When: Je clique sur l'icône en forme de plume
+And: Je saisis <my_tweet> dans le champ de texte
+And: Je clique sur le bouton Tweet
+Then: On m'affiche <message>
+
+Exemple:
+
+my_tweet                                    message
+Hello world ....                            12:le nombre de caractères en trop
+Hey there! ...                              57:le nombre de caractères en trop
