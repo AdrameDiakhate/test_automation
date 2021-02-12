@@ -1,0 +1,62 @@
+Feature:Transfert d'argent sur Orange et moi
+Scenario: Transfert réussi
+Given: Je lance l'application Orange et moi
+When: Je clique sur le bouton Transférer
+And: Je clique sur Transfert d'argent
+And: J'entre <num>
+And: Je clique sur Continuer
+And: J'entre <montant>
+And: Je coche sur la case frais à ma charge
+And: Je clique sur le bouton Continuer
+And: J'entre <password>
+Then: Je reçois <message>
+
+Exemple:
+
+num                 montant            password             message
+
+77 100 01 01        20000              0000              Transfert effectué avec succés
+
+77 100 02 02        30000              0000              Transfert effectué avec succés
+
+Scenario: Transfert echoué mot de passe erroné
+Given: Je lance l'application Orange et moi
+When: Je clique sur le bouton Transférer
+And: Je clique sur Transfert d'argent
+And: J'entre <num>
+And: Je clique sur Continuer
+And: J'entre <montant>
+And: Je coche sur la case frais à ma charge
+And: Je clique sur le bouton Continuer
+And: J'entre <password>
+Then: Je reçois <message>
+
+Exemple:
+
+num                 montant            password             message
+
+77 100 01 01        20000              1111              Transfert échoué
+
+77 100 02 02        30000              1111             Transfert échoué
+
+Scenario: Transfert echoué solde insuffisant
+Given: Je lance l'application Orange et moi
+When: Je clique sur le bouton Transférer
+And: Je clique sur Transfert d'argent
+And: J'entre <num>
+And: Je clique sur Continuer
+And: J'entre <montant>
+And: Je coche sur la case frais à ma charge
+And: Je clique sur le bouton Continuer
+And: J'entre <password>
+Then: Je reçois <message>
+
+Exemple:
+
+num                 montant            password             message
+
+77 100 01 01        20000              1111              Transfert échoué: votre solde actuel
+                                                         est inférieur à 20000
+
+77 100 02 02        30000              1111             Transfert échoué votre solde actuel
+                                                        est inférieur à 30000
