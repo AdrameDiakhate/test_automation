@@ -1,0 +1,65 @@
+Feature:Achat de pass sur Orange et moi
+Scenario: Achat réussi
+Given: Je lance l'application Orange et moi
+When: Je clique sur le bouton Acheter
+And: Je clique Pass
+And: Je coche la case Mon numéro
+And: Je choisi <pass>
+And: Je clique sur le bouton Payer
+And: Je coche la case Orange Money
+And: J'entre <password>
+Then: Je reçois <message>
+
+Exemple:
+
+ pass                     password             message
+
+ 3Go                       0000               Achat effectué avec succés
+
+ 1Go                       0000               Achat effectué avec succés
+
+
+Scenario: Achat échoué solde insuffisant
+Given: Je lance l'application Orange et moi
+When: Je clique sur le bouton Acheter
+And: Je clique Pass
+And: Je coche la case Mon numéro
+And: Je choisi <pass>
+And: Je clique sur le bouton Payer
+And: Je coche la case Orange Money
+And: J'entre <password>
+And: J'entre <montant>
+Then: Je reçois <message>
+
+Exemple:
+
+ pass                  password             message
+
+ 3Go                   0000               Achat effectué échoué: votre solde
+                                          est insuffisant
+
+ 1Go                   0000               Achat effectué échoué: votre solde
+                                          est insuffisant
+
+
+Scenario: Achat échoué mot de passe incorrect
+Given: Je lance l'application Orange et moi
+When: Je clique sur le bouton Acheter
+And: Je clique Pass
+And: Je coche la case Mon numéro
+And: Je choisi <pass>
+And: Je clique sur le bouton Payer
+And: Je coche la case Orange Money
+And: J'entre <password>
+And: J'entre <montant>
+Then: Je reçois <message>
+
+Exemple:
+
+ pass                  password             message
+
+ 3Go                   0000               Achat effectué échoué: votre mot de passe
+                                          est incorrect.
+
+ 1Go                   0000               Achat effectué échoué: votre mot de passe
+                                          est incorrect.
