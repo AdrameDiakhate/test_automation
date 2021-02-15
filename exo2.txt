@@ -1,0 +1,21 @@
+Pré-Condition:Deux nombres entiers sont donnés
+Post-Condition:Nous avons donné le minimum entre deux nombres entiers
+Objectifs:L'objectif c'est de dire quel est le minimum entre deux entiers
+
+entier1: entier
+entier2:entier
+
+Faire:
+    Si entier1<entier2 Alors:
+        Afficher("Le minimum est" entier1)
+    Sinon Si entier2<entier1 Alors:
+        Afficher("Le minimum est" entier2)
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                           Valeurs de sortie
+entier1    entier2                  Résultat obtenu         Résultat attendu                 Résultat Test
+1           2                       1 est le minimum        1 est le minimum                     OK
+5           3                       3 est le minimum        3 est le minimum                     OK
+10          12                      10 est le minimum       10 est le minimum                    OK
