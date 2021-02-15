@@ -1,0 +1,19 @@
+Pré-Condition:Le nombre de jour de l'année est donné
+Post-Condition:Nous avons déterminé si l'année est bissextile ou non.
+Objectifs:L'objectif c'est de déterminer si une année est bissextile ou non.
+nombre_jour: entier
+
+Faire:
+    Si nombre_jour=366 Alors:
+           Afficher("L'année est bissextile")
+        Sinon Si nombre_jour=365 Alors: 
+           Afficher("L'année n'est pas bissextile")
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                      Valeurs de sortie
+un_entier               Résultat obtenu       Résultat attendu      Résultat Test
+365                       pas bissextile          pas bissextile           OK
+366                       bissextile               bissextile              OK
+366                       bissextile               bissextile              OK
