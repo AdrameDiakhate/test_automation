@@ -1,0 +1,18 @@
+Pré-Condition:Deux nombres entiers sont donnés
+Post-Condition:Nous avons calculé la somme de deux entiers
+Objectifs:L'objectif c'est de calculer la somme de deux entiers
+entier1: entier
+entier2:entier
+somme:entier
+Faire:
+    somme:=entier1+entier2
+    Afficher("La somme est" somme)
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                      Valeurs de sortie
+entier1    entier2                  Résultat obtenu       Résultat attendu      Résultat Test
+5           2                           7                        3                     OK
+8           4                           12                       12                    OK
+11          14                          25                       12                    OK
