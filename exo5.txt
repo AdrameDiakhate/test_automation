@@ -1,0 +1,17 @@
+Pré-Condition:Le côté du carré est donné
+Post-Condition:Nous avons calculé le périmètre du terrain carré
+Objectifs:L'objectif c'est de calculer le périmètre d’un terrain carré 
+cote:reel
+perimetre:reel
+Faire:
+    perimetre:=cote*4
+    Afficher("La périmètre est" perimetre)
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                      Valeurs de sortie
+entier1                     Résultat obtenu       Résultat attendu      Résultat Test
+5                                  20                       20                 OK
+4                                  16                       16                 OK
+7                                  28                       28                 OK
