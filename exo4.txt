@@ -1,0 +1,32 @@
+Pré-Condition:Trois nombres entiers sont donnés
+Post-Condition:Nous avons déterminé le maximum de trois entiers
+Objectifs:L'objectif c'est de déterminer le maximum de trois entiers
+entier1: entier
+entier2:entier
+entier3:entier
+maximum:entier
+Faire:
+    maximum:=0
+    Si entier1>entier2 Alors:
+        maximum:=entier1
+        Si maximum>entier3 Alors:
+           Afficher("Le maximum est" maximum)
+        Sinon Si maximum<entier3
+           maximum:=entier3
+           Afficher("Le maximum est" maximum)
+    Sinon Si entier1<entier2 Alors:
+        maximum:=entier2
+        Si maximum>entier3 Alors:
+           Afficher("Le maximum est" maximum)
+        Sinon Si maximum<entier3 Alors:
+            maximum:=entier3
+            Afficher("Le maximum est" maximum)
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                      Valeurs de sortie
+entier1    entier2  entier3              Résultat obtenu       Résultat attendu      Résultat Test
+5           2          1                  1                        1                     OK
+8           4          10                 4                        4                     OK
+11          14         20                 11                       11                    OK
