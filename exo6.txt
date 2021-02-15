@@ -1,0 +1,19 @@
+Pré-Condition:Un nombre entier est donné
+Post-Condition:Nous avons déterminé si un nombre est pair ou impair.
+Objectifs:L'objectif c'est de déterminer si un nombre est pair ou impair.
+un_entier: entier
+
+Faire:
+    Si un_entier mod 2 =0 Alors:
+           Afficher(un_entier "est pair")
+        Sinon 
+           Afficher(un_entier "est impair")
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                      Valeurs de sortie
+un_entier               Résultat obtenu       Résultat attendu      Résultat Test
+5                          impair                impair                    OK
+8                          pair                  pair                      OK
+11                         impair                impair                    OK
