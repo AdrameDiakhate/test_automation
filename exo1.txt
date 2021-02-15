@@ -1,0 +1,17 @@
+Pré-condition:La longueur et la largeur du rectangle sont données
+Post-Condition: On a calculé la surface de l'espace rectangle
+Objectifs: L'objectif est de calculer la surface d'un espace rectangle
+longueur:reel
+largeur:reel
+surface:reel
+        Faire:
+            surface:=longueur*largeur
+            Afficher("La surface est:" surface)
+Vérification:
+
+Valeurs d'entrée                            Valeurs de sortie
+longueur   largeur          surface obtenue  surface attendue   Résultat test
+
+10           4              40                  40                  Ok
+6           2               12                  12                  Ok
+7           3               21                  21                  Ok
