@@ -1,0 +1,33 @@
+Pré-Condition:Les trois côtés du triangle sont donnés
+Post-Condition:Nous avons déterminé si le triangle est équilatéral, isocèle ou scalène
+Objectifs:L'objectif c'est de déterminer si le triangle est équilatéral, isocèle ou scalène
+
+cote1:reel
+cote2:reel
+cote3:reel
+
+Faire:
+    Saisir("Entrer un côté du triangle")
+    Lire(cote1)
+    Saisir("Entrer un autre côté du triangle")
+    Lire(cote2)
+    Saisir("Entrer le troisième côté du triangle")
+    Lire(cote3)
+    Si cote1=cote2 Alors:
+        Si cote1=cote3 Alors:
+           Afficher("Le triangle est équilatéral")
+        Sinon
+           Afficher("Le triangle est isocèle")
+    Sinon
+        Si cote1!=cote3 Alors:
+            Si cote2!=cote3 Alors:
+                Afficher("Le triangle est scalène")
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                   Valeurs de sortie
+cote1  cote2  cote3               Résultat obtenu       Résultat attendu      Résultat Test
+6       6     6                     Equilatéral           Equilatéral               OK
+5       5     7                     isocèle               isocèle                   OK
+7       5     4                     scalène               scalène                   OK
