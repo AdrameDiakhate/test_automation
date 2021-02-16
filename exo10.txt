@@ -1,0 +1,23 @@
+Pré-Condition:Un caractere est donné
+Post-Condition:Nous avons déterminé si le caractère est un alphabet, un chiffre ou un caractère spéciale
+Objectifs:L'objectif c'est de vérifier si le caractère est un alphabet, un chiffre ou un caractère spéciale
+ch: caractere
+
+Faire:   
+    Saisir("Entrer un caractère")
+    Lire(ch)
+    Si (ch >='a' et ch<='z') ou (ch >='A' et ch<='Z')  Alors:
+        Afficher(ch "est un alphabet")
+    Sinon Si (ch >=0 ou ch <=9) Alors:
+        Afficher(ch "est chiffre")
+    Sinon
+        Afficher(ch "est un caractère spéciale")
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                 Valeurs de sortie
+caractère             Résultat obtenu       Résultat attendu      Résultat Test
+a                      alphabet                 alphabet              OK
+1                      chiffre                  chiffre               OK
+/                      spéciale                 spéciale              OK
