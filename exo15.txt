@@ -1,0 +1,37 @@
+Pré-Condition:Les valeurs de a,b et c sont donnés
+Post-Condition:Nous avons déterminé les racines de l'équation du second degré
+Objectifs:L'objectif c'est de déterminer les racines de l'équation du second degré
+a:reel
+b:reel
+c:reel
+delta:reel
+solution1:reel
+solution2:reel
+
+Faire:
+    Saisir("Entrer la valeur de a")
+    Lire(a)
+    Saisir("Entrer la valeur de b")
+    Lire(b)
+    Saisir("Entrer la valeur de c")
+    Lire(c)
+    delta:=b*b-4*ac
+    Si delta>0 Alors:
+        solution1:=-b-sqrt(delta)/2*a
+        solution2:=-b+sqrt(delta)/2*a
+        Afficher("L'équation admet deux solutions " solution1 "et" solution2)
+    Sinon Si delta=0 Alors:
+        solution1:=-b/2*a
+        Afficher(L'équation admet une seule solution" solution1)
+    Sinon
+        Afficher(L'équation n'admet aucune solution")
+
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                       Valeurs de sortie
+a       b       c              Résultat obtenu       Résultat attendu                   Résultat Test
+1       2       3               Pas de solution           Pas de solution                   OK
+1       -2      1               Une seule solution:1      Une seule solution:-1             OK
+1       5       4               Deux solutions: -4 et -1  Deux solutions: -4 et -1          OK
