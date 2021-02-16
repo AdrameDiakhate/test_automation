@@ -1,0 +1,29 @@
+Feature: Choix de Cours sur Openclassrooms
+Scenario: Rechercher un Cours Existant
+Given: Je suis sur mon tableau de bord Openclassrooms
+When: Je clique sur l'icône de Recherche 
+And: Je saisis <sujet> dans le champ de Recherche
+And: Je clique sur le bouton Catégorie et je coche la case Cours
+And: Je clique sur le bouton Thème et je coche la case <my_theme>
+Then: On m'affiche <list>
+
+Exemple:
+
+sujet                                    message 
+PHP                             PHP/Symfony,PHP/MySQL                                                
+
+Scenario: Rechercher un Cours Inexistant
+Given: Je suis sur mon tableau de bord Openclassrooms
+When: Je clique sur l'icône de Recherche 
+And: Je saisis <sujet> dans le champ de Recherche
+Then: On m'affiche <message>
+
+Exemple:
+
+sujet                           message
+
+géométrie                       réinitialiser les filtres ?
+                                vérifier l'orthographe ?
+                                utiliser moins de mots ?
+
+
