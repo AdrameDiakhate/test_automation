@@ -1,0 +1,22 @@
+Pré-Condition:Un nombre est donné
+Post-Condition:Nous avons déterminé si le nombre est divisible par 5 et 11 ou non
+Objectifs:L'objectif c'est de déterminer si le nombre est divisible par 5 et 11 ou non
+
+nombre:reel
+
+Faire:
+    Saisir("Entrer un nombre")
+    Lire(nombre)
+    Si (nombre mod 5=0 et nombre mod 11 =0=) Alors:
+           Afficher("Le nombre est divisible par 5 et 11")
+    Sinon 
+           Afficher("Le nombre n'est pas divisible par 5 et 11")
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                  Valeurs de sortie
+nombre               Résultat obtenu       Résultat attendu      Résultat Test
+55                      divisible              divisible               OK
+40                      non divisible          non divisible           OK
+15                      non divisible          non divisible           OK
