@@ -1,0 +1,20 @@
+Pré-Condition:Un caractère est donné
+Post-Condition:Nous avons déterminé si le caractère est alphabétique ou non
+Objectifs:L'objectif c'est de déterminer si un caractère est alphabétique ou non
+ch: caractere
+
+Faire:
+    Si (ch >='a' et ch<='z') ou (ch >='A' et ch<='Z')  Alors:
+           Afficher("Le caractère est alphabétique")
+        Sinon 
+           Afficher("Le caractère est alphabétique")
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                      Valeurs de sortie
+caractère               Résultat obtenu       Résultat attendu      Résultat Test
+a                       alphabétique          alphabétique           OK
+c                       alphabétique          alphabétique           OK
+z                       alphabétique          alphabétique           OK
+1                       non alphabétique      alphabétique           Failed
