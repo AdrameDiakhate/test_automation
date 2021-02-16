@@ -1,0 +1,21 @@
+Pré-Condition:Un caractere est donné
+Post-Condition:Nous avons vérifié si un caractère est un alphabet majuscule ou minuscule.
+Objectifs:L'objectif c'est de vérifier si un caractère est un alphabet majuscule ou minuscule.
+ch: caractere
+
+Faire:   
+    Saisir("Entrer un caractère")
+    Lire(ch)
+    Si (ch >='a' et ch<='z') Alors:
+        Afficher(ch "est un alphabet minuscule")
+    Sinon Si (ch >='A' et ch<='Z') Alors:
+        Afficher(ch "est un alphabet majuscule")
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                 Valeurs de sortie
+caractère             Résultat obtenu       Résultat attendu      Résultat Test
+A                      Majuscule                Majuscule             OK
+a                      minuscule                minuscule             OK
+c                      minuscule                minuscule             OK
