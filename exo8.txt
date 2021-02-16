@@ -4,6 +4,8 @@ Objectifs:L'objectif c'est de déterminer si un caractère est alphabétique ou 
 ch: caractere
 
 Faire:
+    Saisir("Entrer un caractère")
+    Lire(ch)
     Si (ch >='a' et ch<='z') ou (ch >='A' et ch<='Z')  Alors:
            Afficher("Le caractère est alphabétique")
         Sinon 
