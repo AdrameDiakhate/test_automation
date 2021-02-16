@@ -1,0 +1,28 @@
+Pré-Condition:Les angles d'un triangle sont donnés
+Post-Condition:Nous avons déterminé si le triangle est valide ou non.
+Objectifs:L'objectif c'est de déterminer si le triangle est valide ou non.
+
+angle1:reel
+angle2:reel
+angle3:reel
+
+Faire:
+    Saisir("Entrer la valeur du premier angle")
+    Lire(angle1)
+    Saisir("Entrer la valeur du deuxième angle")
+    Lire(angle2)
+    Saisir("Entrer la valeur du troisième angle")
+    Lire(angle3)
+    Si angle1+angle2+angle3=180 Alors:
+           Afficher("Le triangle est valide")
+    Sinon 
+           Afficher("Le triangle n'est pas valide")
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                   Valeurs de sortie
+angle1  angle2  angle3               Résultat obtenu       Résultat attendu      Résultat Test
+60       60     60                     Valide               Valide                  OK
+50       27     20                     Non Valide           Non Valide              OK
+70       40     50                     Valide               Valide                  OK
