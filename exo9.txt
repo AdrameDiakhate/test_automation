@@ -1,0 +1,23 @@
+Pré-Condition:Un lettre est donnée
+Post-Condition:Nous avons déterminé si la lettre est une voyelle ou une consonne 
+Objectifs:L'objectif c'est de vérifier si la lettre entrée s'agit d'une voyelle ou d'une consonne.
+alpha: caractere
+
+Faire:   
+    Saisir("Entrer une lettre alphabétique")
+    Lire(alpha)
+    Si (ch >='a' et ch<='z') ou (ch >='A' et ch<='Z')  Alors:
+      Si (alpha='a' ou alpha='o' ou alpha='u' ou alpha='e' ou alpha='i' ou alpha='y')
+      ou (alpha='A' ou alpha='O' ou alpha='U' ou alpha='E' alpha='I' ou alpha='Y') Alors:
+            Afficher(alpha "est une voyelle")
+    Sinon 
+         Afficher(alpha "est une consonne")
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                 Valeurs de sortie
+lettre             Résultat obtenu       Résultat attendu      Résultat Test
+a                      voyelle           voyelle                  OK
+b                      consonne          consonne                 OK
+E                      voyelle           consonne                 OK
