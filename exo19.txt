@@ -1,0 +1,25 @@
+Pré-Condition:Un nombre est donné
+Post-Condition:Nous avons déterminé le nombre est positif,négatif ou nul
+Objectifs:L'objectif c'est de déterminer si le nombre est positif,négatif ou nul
+
+nombre:reel
+
+Faire:
+    Saisir("Entrer un nombre")
+    Lire(nombre)
+    Si nombre>0 Alors:
+           Afficher("Le nombre est positif")
+    Sinon 
+        Si nombre<0 Alors:
+            Afficher("Le nombre est négatif")
+        Sinon
+            Afficher("Le nombre est nul")
+Fin Faire
+
+Vérification:
+
+Valeurs d'entrées                                  Valeurs de sortie
+nombre               Résultat obtenu       Résultat attendu      Résultat Test
+60                      positif              positif                OK
+-7                      négatif              négatif                OK
+0                       nul                  nul                    OK
