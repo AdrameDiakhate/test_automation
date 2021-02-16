@@ -1,0 +1,25 @@
+FEATURE: Rechercher une personne sur Instagram
+
+SCENARIO: Recherche d'une personne qui est sur Instagram
+GIVEN: j’ouvre mon navigateur sur la page d'accueil d'Instagram
+THEN: je vérifie la page web de Gmail en regardant si je suis sur l'url: https://www.instagram.com
+WHEN: j’entre <nom> dans le champ Rechercher
+AND: Je scrolle sur la liste des peronnes affichées
+AND: je clique sur <nom>
+THEN: j'accéde au <profil>
+
+Exemple:
+
+ nom                    profil
+Adrame01                Profil Adrame01
+Dev01                   Profil Dev01
+
+SCENARIO: Recherche d'une personne qui n'est sur Instagram
+GIVEN: j’ouvre mon navigateur sur la page d'accueil d'Instagram
+THEN: je vérifie la page web de Gmail en regardant si je suis sur l'url: https://www.instagram.com
+WHEN: j’entre <nom> dans le champ Rechercher
+THEN: On m'affiche aucun <resulat_de_recherche> 
+
+ nom                  resulat_de_recherche
+Adrame05                Aucun résulat
+Dev05                   Aucun résulat
